@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gidugu&display=swap" rel="stylesheet">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Ze operacijon - Pump it</title>
+</head>
+<body>
+<div class="img-cont">
+            <div class="img"></div>
+        </div>
+
+    <section id="main">
+        <div class="main-cont">
+            <div class="quote-cont">
+                <p class="quote">"I am a man of fortune, I must seek my fortune"</p>
+            </div>
+            <div id="button-cont">
+                <button class="btn">Pagnali, press me блять</button>
+            </div>
+        </div>
+    </section>
+
+<section id="image-cont">
+    <div class="img-main-cont">
+        <div class="konteiner">
+            <div class="top-cont">
+                <div class="top">Didysis Kauno kranas (lt. „Didysis Kauno kranas“)</div>
+                <button id="close-cont">
+                    <div class="close">X</div>
+                </button>
+            </div>
+          <div class="big-img"></div>  
+        </div>
+    </div>
+</section>
+
+
+
+
+    <footer id="taskbar-cont">
+        <div class="taskbar">
+            <button class="start-cont">
+                <div class="start-icon"></div>
+                <div class="start">Start</div>
+            </button>
+
+            <div class="time-cont">
+                <div class="time">21:04</div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+
+document.getElementById("button-cont").addEventListener("click", function() {
+  var hideit = document.getElementById("main");
+  var showit = document.getElementById("image-cont");
+
+  hideit.classList.add("hidecont");
+  showit.classList.add("showcont")
+  hideit.classList.remove("showcont2");
+})
+
+document.getElementById("close-cont").addEventListener("click", function() {
+var showit2 = document.getElementById("main");
+var hideit2 = document.getElementById("image-cont");
+
+  hideit2.classList.remove("showcont");
+  hideit2.classList.add("hidecont2");
+  
+  showit2.classList.remove("hidecont");
+  showit2.classList.add("showcont2");
+})
+</script>
+</body>
+
+
+</html>

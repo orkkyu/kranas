@@ -1,0 +1,273 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+body, html {
+background-color: #008080   ;
+font-family: 'Gidugu', sans-serif;
+color: #ffffff;
+/*width: 100%;*/
+height: 100%;
+margin: 0;
+overflow: hidden;
+}
+
+section#main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.img-cont {
+    top: 0;
+    left: 0;
+    position: absolute;
+
+}
+
+.img {
+    width: 150px;
+    height: 130px;
+    background-image: url(../img/win9555.png);
+    background-size: contain;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-cont {
+    display: flex;
+}
+
+p.quote {
+    font-size: 3em;
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+#button-cont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button.btn {
+    font-family: 'Gidugu', sans-serif;
+    font-size: 1.35em;
+    border: outset 3px rgb(226, 226, 226);
+    width: 30%;
+    min-height: 50px;
+    background-color: rgb(192,192,192);
+    cursor: pointer;
+}
+
+button.btn:hover {
+    border: inset 3px rgb(226, 226, 226);
+    background-color: rgb(192,192,192);
+}
+
+#taskbar-cont {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.taskbar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(192,192,192);
+    border-top: 2px solid #ffffff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button.start-cont {
+    display: flex;
+    align-items: center;
+    background-color: rgb(192,192,192);
+    border: outset 3px rgb(226, 226, 226);
+    width: 90px;
+    height: 90%;
+    margin: 0 0 0 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button.start-cont:hover {
+    background-color: rgb(192,192,192);
+    border: inset 3px rgb(226, 226, 226);
+
+}
+
+.start-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/win98.png);
+    background-size: cover;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 34px;
+    font-family: 'Gidugu', sans-serif;
+    font-size: 2em;
+    color: #000;
+    padding: 0;
+}
+
+.time-cont {
+    display: flex;
+    height: 90%;
+    width: 60px;
+    margin: 0 5px 0 0;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-size: 1.3em;
+    border: inset 3px rgb(226, 226, 226);
+    background-color: rgb(192,192,192);
+}
+
+
+.hidecont {
+    animation: hidecont 1.2s 1;
+    animation-fill-mode: forwards;
+}
+
+.hidecont2 {
+    animation: hidecont2 1.2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hidecont {
+    0% {opacity: 1;}
+    100% {opacity: 0; transform: translate(-600px, 600px) scale(0,0);}
+}
+
+@keyframes hidecont22 {
+    0% {opacity: 0; transform: translate(-600px, 600px) scale(0,0);}
+    100% {opacity: 1;}
+}
+
+.showcont {
+animation: showcont 1.2s 1;
+animation-fill-mode: forwards;
+}
+
+.showcont2 {
+    animation: showcont2 1.2s 1;
+    animation-fill-mode: forwards;
+    }
+
+@keyframes showcont {
+    0% {opacity: 0; z-index: 0; transform: translate(-1000px, 1000px) scale(0,0) rotate(360deg);}
+    100% {opacity: 1; transform: translate(0, 0) scale(1,1); z-index: 1;}
+}
+
+@keyframes showcont2 {
+    0% {opacity: 0; z-index: 0; transform: translate(-1000px, 1000px) scale(0,0);}
+    100% {opacity: 1; transform: translate(0, 0) scale(1,1); z-index: 1;}
+}
+
+@keyframes hidecont2 {
+    0% {opacity: 1; transform: translate(0, 0) scale(1,1); z-index: 1;}
+    100% {opacity: 0; z-index: 0; transform: translate(-1000px, 1000px) scale(0,0) rotate(180deg);}
+}
+
+
+section#image-cont {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+
+.img-main-cont {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.konteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 70%;
+    background-color: rgb(192,192,192);
+    border: outset 3px rgb(226, 226, 226);
+}
+
+.top-cont {
+    display: flex;
+    width: 98%;
+    height: 30px;
+    margin: 0 0 10px 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(0,185,255,1) 100%);
+    align-items: center;
+}
+
+.top {
+    width: 100%;
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0 0 0 15px;
+}
+
+#close-cont {
+    display: flex;
+    align-items: center;
+    background-color: rgb(192,192,192);
+    border: outset 3px rgb(226, 226, 226);
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    margin: 0 10px 0 0;
+}
+
+.close {
+    text-align: center;
+    display: flex;
+    color: black;
+    font-size: 1.2em;
+}
+
+button#close-cont:hover {
+    background-color: rgb(192,192,192);
+    border: inset 3px rgb(226, 226, 226);
+
+}
+
+.big-img {
+    background-image: url(../img/kranas1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 98%;
+    height: 95%;
+    margin: 0 0 5px 0;
+}
